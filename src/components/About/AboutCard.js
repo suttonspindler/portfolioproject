@@ -15,7 +15,7 @@ function AboutCard() {
             My fields of expertise include Object-Oriented Design (OOD), Web Development (Full-Stack), Algorithms & Data, Database Systems, as well as several programming languages (C++, Java, Python, JavaScript, etc).
             <br />
             <br />
-            Apart from coding, some other activities that I love to do!
+            Here are some notable accomplishments I have achieved thus far in my career:
           </p>
           <ul>
             <li className="about-activity">
