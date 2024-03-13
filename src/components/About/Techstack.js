@@ -9,9 +9,9 @@ import {
   DiPython,
   DiGit,
   DiJava,
+  DiDatabase
 } from "react-icons/di";
 import {
-  SiMysql,
   SiC
 } from "react-icons/si";
 import { TbBrandGolang } from "react-icons/tb";
@@ -25,6 +25,7 @@ function Techstack() {
     { icon: CgCPlusPlus, label: "C++" },
     { icon: DiNodejs, label: "Node.js" },
     { icon: DiReact, label: "React" },
+    { icon: DiDatabase, label: "SQL" },
     { icon: DiMongodb, label: "MongoDB" },
     { icon: DiGit, label: "Git" }
   ];
