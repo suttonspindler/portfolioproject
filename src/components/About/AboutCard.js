@@ -27,7 +27,7 @@ function AboutCard() {
             - <span className="blue">200+</span> hours invested in teaching assistantance, contributing to the educational experience.
             </li>
             <li className="about-activity">
-            - <span className="blue">30+</span> full-stack tickets contributed in clubs and organizations.
+            - <span className="blue">40+</span> full-stack tickets contributed in clubs and organizations.
             </li>
           </ul>
         </blockquote>
