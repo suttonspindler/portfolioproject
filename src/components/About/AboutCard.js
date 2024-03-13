@@ -8,7 +8,7 @@ function AboutCard() {
       <Card.Body>
         <blockquote className="blockquote mb-0">
           <p style={{ textAlign: "justify" }}>
-            I am <span className="blue">Sutton Spindler </span>, a passionate programmer currently in my Junior year of pursuing a bachelor's degree in Computer Science at  <span className="blue"> Northeastern University</span>.
+            I am <span className="blue">Sutton Spindler</span>, a passionate programmer currently in my Junior year of pursuing a bachelor's degree in Computer Science at  <span className="blue"> Northeastern University</span>.
             <br />
             <br />
             My fields of expertise include Object-Oriented Design (OOD), Web Development (Full-Stack), Algorithms & Data, Database Systems, as well as several programming languages (C++, Java, Python, JavaScript, etc).
