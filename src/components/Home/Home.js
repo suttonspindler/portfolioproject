@@ -20,13 +20,18 @@ function Home() {
                 <strong className="main-name"> SUTTON SPINDLER</strong>
               </h1>
 
+              
               <div style={{ padding: 50, textAlign: "left" }}>
-                <span style={{ fontSize: "1.7em", lineHeight: "1.5" }}>&lt;I am a: </span>
-                <span style={{ display: "inline-block", verticalAlign: "middle", marginTop: "-.7em" }}>
+                <h1>
+                &lt;I am a:
+                </h1>
+                <div style={{ paddingLeft: 40 }}> {/* Adjust paddingLeft as needed */}
                   <Type />
-                </span>
-                <span style={{ fontSize: "1.7em", lineHeight: "1.5" }}> &#47;&gt;</span>
-              </div>
+                </div>
+                <h1>
+                &#47;&gt;
+                </h1>
+              </ div>
             </Col>
 
             <Col md={5} style={{ paddingBottom: 20 }}>
