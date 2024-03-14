@@ -21,7 +21,15 @@ function Home() {
               </h1>
 
               <div style={{ padding: 50, textAlign: "left" }}>
+              <h1>
+              &lt;I am a:
+              </h1>
+              <div style={{ paddingLeft: 30 }}> {/* Adjust paddingLeft as needed */}
                 <Type />
+              </div>
+              <h1>
+              &#47;&gt;
+              </h1>
               </div>
             </Col>
 
