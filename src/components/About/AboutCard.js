@@ -18,16 +18,16 @@ function AboutCard() {
           </p>
           <ul>
             <li className="about-activity">
-            - <span className="blue">150+</span> students educated as a teaching assistant.
+            – <span className="blue">150+</span> students educated as a teaching assistant.
             </li>
             <li className="about-activity">
-            - <span className="blue">103</span> course credits earned.
+            – <span className="blue">103</span> course credits earned.
             </li>
             <li className="about-activity">
-            - <span className="blue">200+</span> hours invested in teaching assistantance, contributing to the educational experience.
+            –  <span className="blue">200+</span> hours invested in teaching assistantance, contributing to the educational experience.
             </li>
             <li className="about-activity">
-            - <span className="blue">35+</span> full-stack tickets contributed in clubs and organizations.
+            –  <span className="blue">35+</span> full-stack tickets contributed in clubs and organizations.
             </li>
           </ul>
         </blockquote>
