@@ -21,7 +21,7 @@ function AboutCard() {
             - <span className="blue">150+</span> students educated as a teaching assistant.
             </li>
             <li className="about-activity">
-            - <span className="blue">87</span> course credits earned.
+            - <span className="blue">103</span> course credits earned.
             </li>
             <li className="about-activity">
             - <span className="blue">200+</span> hours invested in teaching assistantance, contributing to the educational experience.
