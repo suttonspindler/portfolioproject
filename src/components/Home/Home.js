@@ -21,15 +21,11 @@ function Home() {
               </h1>
 
               <div style={{ padding: 50, textAlign: "left" }}>
-              <h1>
-              &lt;I am a:
-              </h1>
-              <div style={{ paddingLeft: 30 }}> {/* Adjust paddingLeft as needed */}
-                <Type />
-              </div>
-              <h1>
-              &#47;&gt;
-              </h1>
+                <span style={{ fontSize: "1.7em", lineHeight: "1.5" }}>&lt;I am a: </span>
+                <span style={{ display: "inline-block", verticalAlign: "middle", marginTop: "-.7em" }}>
+                  <Type />
+                </span>
+                <span style={{ fontSize: "1.7em", lineHeight: "1.5" }}> &#47;&gt;</span>
               </div>
             </Col>
 
