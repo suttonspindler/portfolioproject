@@ -34,7 +34,7 @@ function Home2() {
               – My project portfolio includes a <b className="blue">Patient Daily Health Survey</b> web app, a Unity-based horror game called <b className="blue">"Snail Game,"</b> and a water leak detection app prototype called <b className="blue">"Leaky."</b>
               <br />
               <br />
-              – Beyond academics, I'm passionate about <b className="blue">world cinema, geography, indie music, RPG games, and comedy sketches.</b>
+              – Beyond academics, I'm passionate about <b className="blue">reading, world cinema, geography, indie/rock music, strategu games, and comedy sketches.</b>
               <br />
               <br />
             </p>
