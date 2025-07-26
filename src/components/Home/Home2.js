@@ -1,9 +1,7 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import myImg from "../../Assets/avatar.jpeg";
-import {
-  AiFillGithub
-} from "react-icons/ai";
+import { AiFillGithub } from "react-icons/ai";
 import { FaLinkedinIn } from "react-icons/fa";
 
 function Home2() {
@@ -16,31 +14,39 @@ function Home2() {
               A<span className="blue"> BRIEF OVERVIEW</span>
             </h1>
             <p className="home-about-body">
-              – I am a <b className="blue">dedicated</b> computer science student at Northeastern University with a GPA of <b className="blue">3.9/4.0.</b>
+              – I am a <b className="blue">dedicated</b> computer science student at Northeastern University with a GPA
+              of <b className="blue">3.9/4.0.</b>
               <br />
+              <br />– I have experience across the full software stack and specialize in tools and languages like{" "}
+              <b className="blue">Python, JavaScript, Java, and C++</b>, as well as{" "}
+              <b className="blue">MongoDB, React, Node.js, and Git.</b>
               <br />
-              – I excel in languages like <b className="blue">Java, JavaScript, C++, and Python,</b> and I'm adept with tools like <b className="blue">Docker, GitHub, and React.</b>
+              <br />– Currently, I'm a <b className="blue">Full-Stack Software Development Intern</b> at{" "}
+              <b className="blue">Verizon</b>, where I’m building Android and edge AI systems for real-time video
+              detection on embedded hardware.
               <br />
+              <br />– Previously, I worked as a <b className="blue">Software Engineer</b> at{" "}
+              <b className="blue">SphereUs</b> and a <b className="blue">Full-Stack Co-op</b> at{" "}
+              <b className="blue">Verizon Boston,</b> focusing on database migration, cloud integrations, and AI-powered
+              tools.
               <br />
-              – Currently, I'm a <b className="blue">Senior Web & Software Developer</b> for <b className="blue">Northeastern Science Magazine,</b> where I've built a website and created a network builder app using <b className="blue">Node.js and Express.</b>
+              <br />– My internship at <b className="blue">CSL Behring</b> involved building data extraction tools with{" "}
+              <b className="blue">AWS Textract</b> and researching AI models for dataset summarization.
               <br />
+              <br />– My project portfolio includes a <b className="blue">live sign language translator</b> using a
+              multi-language CNN model, a <b className="blue">meeting scheduler</b> built with MySQL and Node.js, and a
+              Unity-based horror game called <b className="blue">"Snail Game."</b>
               <br />
-              – I've also worked as a <b className="blue">Teaching Assistant,</b> helping students grasp <b className="blue">object-oriented programming</b> concepts.
-              <br />
-              <br />
-              – Previously, I developed a project management dashboard for <b className="blue">Northeastern Electric Racing</b> and gained retail experience at <b className="blue">Target Corporation.</b>
-              <br />
-              <br />
-              – My project portfolio includes a <b className="blue">Patient Daily Health Survey</b> web app, a Unity-based horror game called <b className="blue">"Snail Game,"</b> and a water leak detection app prototype called <b className="blue">"Leaky."</b>
-              <br />
-              <br />
-              – Beyond academics, I'm passionate about <b className="blue">reading, world cinema, geography, indie/rock music, strategu games, and comedy sketches.</b>
+              <br />– Outside of work, I'm passionate about{" "}
+              <b className="blue">
+                reading, world cinema, geography, indie and classic rock music, strategy games, and comedy sketches.
+              </b>
               <br />
               <br />
             </p>
           </Col>
           <Col md={4} className="myAvtar">
-              <img src={myImg} className="img-fluid" alt="avatar" />
+            <img src={myImg} className="img-fluid" alt="avatar" />
           </Col>
         </Row>
         <Row>
