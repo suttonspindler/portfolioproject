@@ -14,30 +14,32 @@ function Home2() {
               A<span className="blue"> BRIEF OVERVIEW</span>
             </h1>
             <p className="home-about-body">
-              – I am a <b className="blue">dedicated</b> computer science student at Northeastern University with a GPA
-              of <b className="blue">3.9/4.0.</b>
+              – I am a <b className="blue">Software Engineer</b> at{" "}
+              <b className="blue">Verizon</b>, building Next.js/Node.js features for an internal API Marketplace and
+              architecting backend services across cloud and gateway environments.
               <br />
-              <br />– I have experience across the full software stack and specialize in tools and languages like{" "}
-              <b className="blue">Python, JavaScript, Java, and C++</b>, as well as{" "}
-              <b className="blue">MongoDB, React, Node.js, and Git.</b>
+              <br />– I graduated from <b className="blue">Northeastern University</b> in December 2025 with a B.S. in
+              Computer Science, a <b className="blue">3.83/4.00</b> GPA, and Dean’s List honors every semester.
               <br />
-              <br />– Currently, I'm a <b className="blue">Full-Stack Software Development Intern</b> at{" "}
-              <b className="blue">Verizon</b>, where I’m building Android and edge AI systems for real-time video
-              detection on embedded hardware.
+              <br />– I work across the full stack and specialize in{" "}
+              <b className="blue">TypeScript, JavaScript, Python, Java, and C++</b>, with{" "}
+              <b className="blue">React, Next.js, Node.js, MongoDB, Docker, and AWS.</b>
               <br />
-              <br />– Previously, I worked as a <b className="blue">Software Engineer</b> at{" "}
-              <b className="blue">SphereUs</b> and a <b className="blue">Full-Stack Co-op</b> at{" "}
-              <b className="blue">Verizon Boston,</b> focusing on database migration, cloud integrations, and AI-powered
-              tools.
+              <br />– Previously at <b className="blue">Verizon</b>, I built on-device ML inference pipelines for
+              real-time video detection on embedded hardware — keeping customer data local and cutting end-to-end
+              latency to under 50ms.
               <br />
-              <br />– My internship at <b className="blue">CSL Behring</b> involved building data extraction tools with{" "}
-              <b className="blue">AWS Textract</b> and researching AI models for dataset summarization.
+              <br />– At <b className="blue">SphereUs</b>, I migrated production infrastructure from PostgreSQL to
+              MongoDB while the platform scaled from 0 to 8 brand partners, and integrated{" "}
+              <b className="blue">OpenAI APIs</b> to automate ambassador outreach.
               <br />
-              <br />– My project portfolio includes a <b className="blue">live sign language translator</b> using a
-              multi-language CNN model, a <b className="blue">meeting scheduler</b> built with MySQL and Node.js, and a
-              Unity-based horror game called <b className="blue">"Snail Game."</b>
+              <br />– At <b className="blue">CSL Behring</b>, I built document-parsing pipelines with{" "}
+              <b className="blue">AWS Textract</b> and prototyped a RAG system over internal pharmaceutical datasets.
               <br />
-              <br />– Outside of work, I'm passionate about{" "}
+              <br />– My favorite recent project is a <b className="blue">live sign language translator</b> that runs a
+              single CNN across <b className="blue">ASL, DGS, and LSE</b> for real-time transcription from a webcam.
+              <br />
+              <br />– Outside of work, I’m passionate about{" "}
               <b className="blue">
                 reading, world cinema, geography, indie and classic rock music, strategy games, and comedy sketches.
               </b>

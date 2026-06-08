@@ -6,6 +6,8 @@ import leaky from "../../Assets/Projects/leaky.png";
 import survey from "../../Assets/Projects/survey.png";
 import snail from "../../Assets/Projects/snail.png";
 import escape from "../../Assets/Projects/escape.png";
+import signLanguage from "../../Assets/Projects/sign_language.png";
+import meetingScheduler from "../../Assets/Projects/meeting_scheduler.png";
 
 function Projects() {
   return (
@@ -17,11 +19,31 @@ function Projects() {
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
           <Col md={4} className="project-card">
             <ProjectCard
+              imgPath={signLanguage}
+              title="Sign Language Translator"
+              description="Live video sign language translator powered by a single CNN trained across ASL, DGS, and LSE.
+              Tuned preprocessing and an NLP pipeline to fix misclassifications and improve transcription accuracy in real time."
+              ghLink="https://github.com/godinezsteven1/AI-SignLanguage"
+            />
+          </Col>
+
+          <Col md={4} className="project-card">
+            <ProjectCard
               imgPath={survey}
               title="Patient Daily Health Survey"
-              description="Created for Aidar Health, a biotech company, this web application allows physicians to create daily health
-              surveys and assign them to patients."
+              description="Proof-of-concept full-stack app built for biotech firm Aidar Health, allowing physicians to create
+              daily health surveys and assign them to patients. Delivered during their internship evaluation process."
               ghLink="https://github.com/suttonspindler/Patient-Daily-Health-Survey"
+            />
+          </Col>
+
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={meetingScheduler}
+              title="Meeting Scheduler"
+              description="Full-stack app for managing teams and meeting bookings using MySQL, Node.js, and Express.js.
+              Handles complex DB interactions with async calls, multi-table joins, and dynamic user roles."
+              ghLink="https://github.com/ethanszeto/db-design-meeting-scheduler"
             />
           </Col>
 
