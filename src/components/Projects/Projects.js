@@ -6,7 +6,7 @@ import leaky from "../../Assets/Projects/leaky.png";
 import survey from "../../Assets/Projects/survey.png";
 import snail from "../../Assets/Projects/snail.png";
 import escape from "../../Assets/Projects/escape.png";
-import signLanguage from "../../Assets/Projects/sign_language.png";
+import signLanguage from "../../Assets/Projects/ASL.gif";
 import meetingScheduler from "../../Assets/Projects/meeting_scheduler.png";
 
 function Projects() {
