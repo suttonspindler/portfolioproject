@@ -1,58 +1,47 @@
 import React from "react";
-import Card from "react-bootstrap/Card";
-import Button from "react-bootstrap/Button";
 import { CgWebsite } from "react-icons/cg";
 import { BsGithub } from "react-icons/bs";
 
 function ProjectCards(props) {
   return (
-    <Card className="project-card-view">
+    <div className="proj-card">
       {props.imgPath && (
-        <Card.Img variant="top" src={props.imgPath} alt="card-img" />
+        <div className="proj-card-media">
+          <img src={props.imgPath} alt={props.title} className="proj-card-img" />
+        </div>
       )}
-      <Card.Body>
-        <Card.Title>{props.title}</Card.Title>
-        <Card.Text style={{ textAlign: "justify" }}>
-          {props.description}
-        </Card.Text>
-
-        {props.ghLink && (
-          <Button
-            variant="primary"
-            href={props.ghLink}
-            target="_blank"
-            style={{ marginRight: "10px" }}
-          >
-            <BsGithub /> &nbsp;
-            {"GitHub"}
-          </Button>
-        )}
-
-        {props.presentationLink && (
-          <Button
-            variant="primary"
-            href={props.presentationLink}
-            target="_blank"
-            style={{ marginRight: "10px" }}
-          >
-            <CgWebsite /> &nbsp;
-            {"Presentation"}
-          </Button>
-        )}
-
-        {props.demoLink && (
-          <Button
-            variant="primary"
-            href={props.demoLink}
-            target="_blank"
-            style={{ marginLeft: "10px" }}
-          >
-            <CgWebsite /> &nbsp;
-            {"Demo"}
-          </Button>
-        )}
-      </Card.Body>
-    </Card>
+      <div className="proj-card-body">
+        <h3 className="proj-card-title">{props.title}</h3>
+        <p className="proj-card-description">{props.description}</p>
+        <div className="proj-card-actions">
+          {props.liveLink && (
+            <a className="proj-card-btn proj-card-btn-primary" href={props.liveLink} target="_blank" rel="noreferrer">
+              <CgWebsite /> &nbsp;Visit Site
+            </a>
+          )}
+          {props.ghLink && (
+            <a className="proj-card-btn proj-card-btn-primary" href={props.ghLink} target="_blank" rel="noreferrer">
+              <BsGithub /> &nbsp;GitHub
+            </a>
+          )}
+          {props.demoLink && (
+            <a className="proj-card-btn proj-card-btn-primary" href={props.demoLink} target="_blank" rel="noreferrer">
+              <CgWebsite /> &nbsp;Demo
+            </a>
+          )}
+          {props.presentationLink && (
+            <a
+              className="proj-card-btn proj-card-btn-primary"
+              href={props.presentationLink}
+              target="_blank"
+              rel="noreferrer"
+            >
+              <CgWebsite /> &nbsp;Presentation
+            </a>
+          )}
+        </div>
+      </div>
+    </div>
   );
 }
 

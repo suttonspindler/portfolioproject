@@ -7,6 +7,7 @@ import Projects from "./components/Projects/Projects";
 import Timeline from "./components/Timeline/Timeline";
 import Footer from "./components/Footer";
 import Resume from "./components/Resume/ResumeNew";
+import Particle from "./components/Particle";
 import {
   BrowserRouter as Router,
   Route,
@@ -32,6 +33,7 @@ function App() {
   return (
     <Router>
       <Preloader load={load} />
+      <Particle />
       <div className="App" id={load ? "no-scroll" : "scroll"}>
         <Navbar />
         <ScrollToTop />

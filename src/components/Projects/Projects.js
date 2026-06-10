@@ -25,6 +25,7 @@ function Projects() {
               description="Full-stack social book tracking and discovery app built in Next.js, TypeScript, and Supabase.
               Modeled a Postgres schema with row-level security for ratings, reviews, shelves, and social follows."
               ghLink="https://github.com/suttonspindler/novelty"
+              liveLink="https://novelty-mu.vercel.app/"
             />
           </Col>
 

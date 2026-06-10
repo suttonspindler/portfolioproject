@@ -20,7 +20,7 @@ function Home2() {
               <b className="blue">React, Next.js, Node.js, MongoDB, Docker, and AWS</b>.
               <br />
               <br />– At <b className="blue">Verizon</b>, I built on-device ML inference for real-time video detection on
-              embedded router hardware — under 50ms latency, no data leaving the device.
+              embedded router hardware, under 50ms latency, no data leaving the device.
               <br />
               <br />– At <b className="blue">SphereUs</b>, I migrated production infrastructure from PostgreSQL to
               MongoDB while the platform scaled from 0 to 8 brand partners.

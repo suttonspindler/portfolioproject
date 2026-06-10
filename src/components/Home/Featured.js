@@ -1,6 +1,7 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import { BsGithub } from "react-icons/bs";
+import { CgWebsite } from "react-icons/cg";
 import noveltyGif from "../../Assets/Projects/novelty.gif";
 
 const tags = ["Next.js", "TypeScript", "Supabase", "PostgreSQL", "Tailwind", "Full-Stack"];
@@ -28,14 +29,24 @@ function Featured() {
                 </span>
               ))}
             </div>
-            <a
-              className="featured-link"
-              href="https://github.com/suttonspindler/novelty"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <BsGithub /> &nbsp;View on GitHub
-            </a>
+            <div className="featured-link-row">
+              <a
+                className="featured-link"
+                href="https://novelty-mu.vercel.app/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <CgWebsite /> &nbsp;Visit Site
+              </a>
+              <a
+                className="featured-link featured-link-secondary"
+                href="https://github.com/suttonspindler/novelty"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <BsGithub /> &nbsp;GitHub
+              </a>
+            </div>
           </Col>
         </Row>
       </Container>

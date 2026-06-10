@@ -6,9 +6,10 @@ html {
   );
 
   --image-gradient: linear-gradient(
-    to bottom left,
-    rgba(17, 16, 16, 0.678),
-    rgba(12, 10, 22, 0.863)
+    180deg,
+    rgba(20, 30, 25, 0.18) 0%,
+    rgba(20, 30, 25, 0.32) 60%,
+    rgba(12, 8, 22, 0.78) 100%
   );
 
   --imp-text-color: #546FC5ff;
@@ -232,7 +233,7 @@ button:focus {
   left: 0;
   width: 100%;
   height: 100%;
-  z-index: -1;
+  z-index: -2;
   background-image: var(--image-gradient), url(./Assets/home-bg.jpg);
   background-position: center center;
   background-size: cover;
@@ -431,7 +432,7 @@ button:focus {
   left: 0;
   width: 100%;
   height: 100%;
-  z-index: -1;
+  z-index: -2;
   background-image: var(--image-gradient), url(./Assets/home-bg.jpg);
   background-position: center center;
   background-size: cover;
@@ -439,11 +440,9 @@ button:focus {
 }
 
 .project-card {
-  padding-top: 50px !important;
-  padding-bottom: 50px !important;
-  padding-left: 25px !important;
-  padding-right: 25px !important;
+  padding: 1rem !important;
   height: auto !important;
+  display: flex;
 }
 
 .project-card-view {
@@ -509,7 +508,7 @@ button:focus {
   left: 0;
   width: 100%;
   height: 100%;
-  z-index: -1;
+  z-index: -2;
   background-image: var(--image-gradient), url(./Assets/home-bg.jpg);
   background-position: center center;
   background-size: cover;
@@ -591,7 +590,7 @@ button:focus {
   left: 0;
   width: 100%;
   height: 100%;
-  z-index: -1;
+  z-index: -2;
   background-image: var(--image-gradient), url(./Assets/home-bg.jpg);
   background-position: center center;
   background-size: cover;
@@ -937,6 +936,25 @@ button:focus {
   background: #6d85d4;
 }
 
+.featured-link-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.7rem;
+}
+
+.featured-link-secondary {
+  background: transparent;
+  color: rgba(255, 255, 255, 0.92) !important;
+  border: 1.5px solid rgba(255, 255, 255, 0.32);
+}
+
+.featured-link-secondary:hover {
+  transform: translateY(-2px);
+  background: transparent;
+  border-color: var(--imp-text-color);
+  color: var(--imp-text-color) !important;
+}
+
 /* ---------------------------------- */
 /*  Timeline page (Gantt to-scale)    */
 /* ---------------------------------- */
@@ -970,6 +988,240 @@ button:focus {
 
 .subhead-plain {
   color: #ffffff;
+}
+
+/* ---------------------------------- */
+/*  Particle layer (home hero)        */
+/* ---------------------------------- */
+#tsparticles-bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1;
+  pointer-events: none;
+}
+
+#tsparticles-bg canvas {
+  position: absolute !important;
+  top: 0 !important;
+  left: 0 !important;
+  width: 100% !important;
+  height: 100% !important;
+  pointer-events: none !important;
+}
+
+/* Subtle shadow on hero text for legibility over watercolor */
+.hero-name,
+.hero-tagline {
+  text-shadow: 0 2px 14px rgba(0, 0, 0, 0.4);
+}
+
+/* ---------------------------------- */
+/*  About page (redesigned)           */
+/* ---------------------------------- */
+.about-header {
+  text-align: center;
+  padding: 1rem 0 2.5rem 0;
+}
+
+.about-page-title {
+  font-size: clamp(2.2rem, 4vw, 3rem);
+  font-weight: 800;
+  color: #ffffff;
+  letter-spacing: -0.02em;
+  margin: 0;
+}
+
+.about-block {
+  max-width: 880px;
+  margin: 0 auto 4rem auto;
+}
+
+.about-block:last-child {
+  margin-bottom: 1rem;
+}
+
+.about-section-title {
+  font-size: clamp(1.4rem, 2.2vw, 1.8rem);
+  font-weight: 700;
+  color: #ffffff;
+  letter-spacing: -0.01em;
+  margin: 0 0 1.5rem 0;
+  text-align: left;
+}
+
+.journey-body {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.07);
+  border-radius: 16px;
+  padding: 2rem 2.2rem;
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.journey-body p {
+  font-size: 1.02rem;
+  line-height: 1.7;
+  margin-bottom: 1.2rem;
+}
+
+.journey-body p:last-child {
+  margin-bottom: 0;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.3rem;
+}
+
+@media (max-width: 700px) {
+  .skills-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.skills-group {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.07);
+  border-radius: 14px;
+  padding: 1.3rem 1.4rem;
+  transition: border-color 0.18s ease, transform 0.18s ease;
+}
+
+.skills-group:hover {
+  border-color: rgba(84, 111, 197, 0.45);
+  transform: translateY(-2px);
+}
+
+.skills-group-title {
+  font-size: 0.78rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--imp-text-color);
+  font-weight: 700;
+  margin: 0 0 0.9rem 0;
+}
+
+.skills-chip-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+}
+
+.skills-chip {
+  display: inline-block;
+  padding: 0.35rem 0.8rem;
+  border-radius: 999px;
+  font-size: 0.85rem;
+  background: rgba(84, 111, 197, 0.12);
+  color: #d6dff2;
+  border: 1px solid rgba(84, 111, 197, 0.28);
+}
+
+/* ---------------------------------- */
+/*  Project Cards (modern)            */
+/* ---------------------------------- */
+.proj-card {
+  display: flex;
+  flex-direction: column;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.07);
+  border-radius: 16px;
+  overflow: hidden;
+  height: 100%;
+  transition: transform 0.22s ease, border-color 0.22s ease, box-shadow 0.22s ease;
+}
+
+.proj-card:hover {
+  transform: translateY(-6px);
+  border-color: rgba(84, 111, 197, 0.55);
+  box-shadow: 0 22px 50px rgba(0, 0, 0, 0.4);
+}
+
+.proj-card-media {
+  background: rgba(0, 0, 0, 0.25);
+  overflow: hidden;
+  aspect-ratio: 16 / 10;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.proj-card-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.proj-card:hover .proj-card-img {
+  transform: scale(1.04);
+}
+
+.proj-card-body {
+  padding: 1.3rem 1.4rem 1.4rem 1.4rem;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.proj-card-title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #ffffff;
+  letter-spacing: -0.01em;
+  margin: 0 0 0.55rem 0;
+}
+
+.proj-card-description {
+  font-size: 0.95rem;
+  line-height: 1.55;
+  color: rgba(255, 255, 255, 0.78);
+  margin: 0 0 1.2rem 0;
+  flex-grow: 1;
+}
+
+.proj-card-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.55rem;
+}
+
+.proj-card-btn {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.5rem 1rem;
+  border-radius: 999px;
+  font-size: 0.88rem;
+  font-weight: 600;
+  text-decoration: none !important;
+  transition: transform 0.18s ease, background 0.18s ease, color 0.18s ease, border-color 0.18s ease;
+  border: 1.5px solid transparent;
+  line-height: 1;
+}
+
+.proj-card-btn-primary {
+  background: var(--imp-text-color);
+  color: #ffffff !important;
+}
+
+.proj-card-btn-primary:hover {
+  transform: translateY(-2px);
+  background: #6d85d4;
+}
+
+.proj-card-btn-secondary {
+  background: transparent;
+  color: rgba(255, 255, 255, 0.88) !important;
+  border-color: rgba(255, 255, 255, 0.28);
+}
+
+.proj-card-btn-secondary:hover {
+  transform: translateY(-2px);
+  border-color: var(--imp-text-color);
+  color: var(--imp-text-color) !important;
 }
 
 .gantt {

@@ -4,45 +4,49 @@ import Particles from "react-tsparticles";
 function Particle() {
   return (
     <Particles
-      id="tsparticles"
+      id="tsparticles-bg"
       params={{
+        fpsLimit: 60,
         particles: {
           number: {
-            value: 160,
-            density: {
-              enable: true,
-              value_area: 1500,
-            },
+            value: 70,
+            density: { enable: true, value_area: 900 },
           },
-          line_linked: {
-            enable: false,
-            opacity: 0.03,
-          },
-          move: {
-            direction: "right",
-            speed: 0.05,
+          color: { value: "#ffffff" },
+          shape: { type: "circle" },
+          opacity: {
+            value: 0.55,
+            random: true,
+            anim: { enable: true, speed: 0.6, opacity_min: 0.12, sync: false },
           },
           size: {
-            value: 1,
+            value: 2.2,
+            random: true,
           },
-          opacity: {
-            anim: {
-              enable: true,
-              speed: 1,
-              opacity_min: 0.05,
-            },
+          line_linked: { enable: false },
+          move: {
+            enable: true,
+            direction: "bottom",
+            speed: 0.45,
+            random: true,
+            straight: false,
+            out_mode: "out",
+            bounce: false,
+            attract: { enable: false },
           },
         },
         interactivity: {
+          detect_on: "window",
           events: {
-            onclick: {
-              enable: true,
-              mode: "push",
-            },
+            onhover: { enable: true, mode: "repulse" },
+            onclick: { enable: false },
+            resize: true,
           },
           modes: {
-            push: {
-              particles_nb: 1,
+            repulse: {
+              distance: 70,
+              duration: 0.6,
+              speed: 0.6,
             },
           },
         },

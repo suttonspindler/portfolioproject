@@ -1,49 +1,40 @@
 import React from "react";
-import { Container, Row, Col } from "react-bootstrap";
-import Github from "./Github";
-import Techstack from "./Techstack";
+import { Container } from "react-bootstrap";
 import Aboutcard from "./AboutCard";
-import laptopImg from "../../Assets/about.png";
+import Journey from "./Journey";
+import Techstack from "./Techstack";
 import Toolstack from "./Toolstack";
 
 function About() {
   return (
     <Container fluid className="about-section">
       <Container>
-        <Row style={{ justifyContent: "center", padding: "10px" }}>
-          <Col
-            md={7}
-            style={{
-              justifyContent: "center",
-              paddingTop: "30px",
-              paddingBottom: "50px",
-            }}
-          >
-            <h1 style={{ fontSize: "2.1em", paddingBottom: "20px" }}>
-              <strong className="blue">About Me</strong>
-            </h1>
-            <Aboutcard />
-          </Col>
-          <Col
-            md={5}
-            style={{ paddingTop: "120px", paddingBottom: "50px" }}
-            className="about-img"
-          >
-            <img src={laptopImg} alt="about" className="img-fluid" />
-          </Col>
-        </Row>
+        <header className="about-header">
+          <h1 className="about-page-title">
+            About <span className="blue">Me</span>
+          </h1>
+        </header>
+
+        <div className="about-block">
+          <Aboutcard />
+        </div>
+
+        <div className="about-block">
+          <h2 className="about-section-title">
+            How I <span className="blue">Got Here</span>
+          </h2>
+          <Journey />
+        </div>
+
         <h1 className="project-heading">
           <strong className="blue">Technologies</strong>
         </h1>
-
         <Techstack />
 
         <h1 className="project-heading">
           <strong className="blue">Software</strong>
         </h1>
         <Toolstack />
-
-        <Github />
       </Container>
     </Container>
   );
