@@ -1,9 +1,9 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import { BsGithub } from "react-icons/bs";
-import aslGif from "../../Assets/Projects/ASL.gif";
+import noveltyGif from "../../Assets/Projects/novelty.gif";
 
-const tags = ["CNN", "Computer Vision", "NLP", "Python", "PyTorch", "Real-Time"];
+const tags = ["Next.js", "TypeScript", "Supabase", "PostgreSQL", "Tailwind", "Full-Stack"];
 
 function Featured() {
   return (
@@ -11,14 +11,15 @@ function Featured() {
       <Container>
         <Row className="featured-row">
           <Col md={7} className="featured-media">
-            <img src={aslGif} alt="Sign Language Translator demo" className="featured-gif" />
+            <img src={noveltyGif} alt="Novelty book tracker demo" className="featured-gif" />
           </Col>
           <Col md={5} className="featured-copy">
-            <p className="featured-eyebrow">Featured Project</p>
-            <h2 className="featured-title">Sign Language Translator</h2>
+            <p className="featured-eyebrow">Featured Project · Live</p>
+            <h2 className="featured-title">Novelty</h2>
             <p className="featured-description">
-              Live video translator powered by a single CNN trained across <span className="blue">ASL, DGS, and LSE</span>.
-              Tuned preprocessing and an NLP pipeline to fix misclassifications and improve transcription accuracy in real time.
+              A full-stack <span className="blue">social book tracking and discovery app</span> built in Next.js,
+              TypeScript, and Supabase. Modeled a Postgres schema with{" "}
+              <span className="blue">row-level security</span> for ratings, reviews, shelves, and social follows.
             </p>
             <div className="featured-tags">
               {tags.map((t) => (
@@ -29,7 +30,7 @@ function Featured() {
             </div>
             <a
               className="featured-link"
-              href="https://github.com/godinezsteven1/AI-SignLanguage"
+              href="https://github.com/suttonspindler/novelty"
               target="_blank"
               rel="noreferrer"
             >

@@ -8,6 +8,7 @@ import snail from "../../Assets/Projects/snail.png";
 import escape from "../../Assets/Projects/escape.png";
 import signLanguage from "../../Assets/Projects/ASL.gif";
 import meetingScheduler from "../../Assets/Projects/meeting_scheduler.png";
+import novelty from "../../Assets/Projects/novelty.gif";
 
 function Projects() {
   return (
@@ -17,6 +18,16 @@ function Projects() {
           My <strong className="blue">Projects</strong>
         </h1>
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={novelty}
+              title="Novelty"
+              description="Full-stack social book tracking and discovery app built in Next.js, TypeScript, and Supabase.
+              Modeled a Postgres schema with row-level security for ratings, reviews, shelves, and social follows."
+              ghLink="https://github.com/suttonspindler/novelty"
+            />
+          </Col>
+
           <Col md={4} className="project-card">
             <ProjectCard
               imgPath={signLanguage}
