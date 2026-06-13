@@ -1,9 +1,18 @@
 import React from "react";
 import Particles from "react-tsparticles";
+import { useLocation } from "react-router-dom";
 
 function Particle() {
+  const location = useLocation();
+  const isTimeline = location.pathname === "/timeline";
+
+  const color = isTimeline ? "#a48cd9" : "#ffffff";
+  const opacityMax = isTimeline ? 0.42 : 0.55;
+  const opacityMin = isTimeline ? 0.08 : 0.12;
+
   return (
     <Particles
+      key={isTimeline ? "purple" : "white"}
       id="tsparticles-bg"
       params={{
         fpsLimit: 60,
@@ -12,12 +21,12 @@ function Particle() {
             value: 70,
             density: { enable: true, value_area: 900 },
           },
-          color: { value: "#ffffff" },
+          color: { value: color },
           shape: { type: "circle" },
           opacity: {
-            value: 0.55,
+            value: opacityMax,
             random: true,
-            anim: { enable: true, speed: 0.6, opacity_min: 0.12, sync: false },
+            anim: { enable: true, speed: 0.6, opacity_min: opacityMin, sync: false },
           },
           size: {
             value: 2.2,

@@ -14,48 +14,36 @@ function pct(idx) {
   return (idx / TOTAL_MONTHS) * 100;
 }
 
-function barStyle(entry) {
-  const start = monthIdx(entry.start);
-  const end = entry.current ? monthIdx(TODAY) + 1 : monthIdx(entry.end) + 1;
+function barStyle(seg) {
+  const start = monthIdx(seg.start);
+  const end = seg.current ? monthIdx(TODAY) + 1 : monthIdx(seg.end) + 1;
   return { left: `${pct(start)}%`, width: `${pct(end - start)}%` };
 }
 
 const industry = [
   {
     company: "Verizon",
-    title: "Software Engineer",
-    dates: "Jan 2026 – Present",
-    start: { year: 2026, month: 1 },
-    end: { year: 2026, month: 6 },
+    title: "Software Engineer I",
+    subtitle: "formerly Full-Stack Intern (2025) · Full-Stack Co-op (2024)",
+    dates: "Jun 2024 – Present",
     current: true,
-  },
-  {
-    company: "Verizon",
-    title: "Full-Stack Software Development Intern",
-    dates: "Jun 2025 – Aug 2025",
-    start: { year: 2025, month: 6 },
-    end: { year: 2025, month: 8 },
+    segments: [
+      { start: { year: 2024, month: 6 }, end: { year: 2024, month: 12 } },
+      { start: { year: 2025, month: 6 }, end: { year: 2025, month: 8 } },
+      { start: { year: 2026, month: 1 }, current: true },
+    ],
   },
   {
     company: "SphereUs",
     title: "Software Engineer",
     dates: "Jan 2025 – May 2025",
-    start: { year: 2025, month: 1 },
-    end: { year: 2025, month: 5 },
-  },
-  {
-    company: "Verizon",
-    title: "Full-Stack Software Development Co-op",
-    dates: "Jun 2024 – Dec 2024",
-    start: { year: 2024, month: 6 },
-    end: { year: 2024, month: 12 },
+    segments: [{ start: { year: 2025, month: 1 }, end: { year: 2025, month: 5 } }],
   },
   {
     company: "CSL Behring",
     title: "Application Developer Intern",
     dates: "Apr 2024 – Jun 2024",
-    start: { year: 2024, month: 4 },
-    end: { year: 2024, month: 6 },
+    segments: [{ start: { year: 2024, month: 4 }, end: { year: 2024, month: 6 } }],
   },
 ];
 
@@ -64,22 +52,19 @@ const community = [
     company: "NU Sci Magazine",
     title: "Senior Software & Web Developer",
     dates: "Apr 2023 – Dec 2025",
-    start: { year: 2023, month: 4 },
-    end: { year: 2025, month: 12 },
+    segments: [{ start: { year: 2023, month: 4 }, end: { year: 2025, month: 12 } }],
   },
   {
     company: "Northeastern University",
     title: "Teaching Assistant — Fundamentals of CS 2",
     dates: "Aug 2023 – Dec 2023",
-    start: { year: 2023, month: 8 },
-    end: { year: 2023, month: 12 },
+    segments: [{ start: { year: 2023, month: 8 }, end: { year: 2023, month: 12 } }],
   },
   {
     company: "Northeastern Electric Racing",
     title: "Software Developer",
     dates: "Jan 2023 – Jun 2023",
-    start: { year: 2023, month: 1 },
-    end: { year: 2023, month: 6 },
+    segments: [{ start: { year: 2023, month: 1 }, end: { year: 2023, month: 6 } }],
   },
 ];
 
@@ -134,6 +119,7 @@ function Row({ entry, track }) {
       <div className="gantt-label">
         <div className="gantt-label-company">{entry.company}</div>
         <div className="gantt-label-role">{entry.title}</div>
+        {entry.subtitle && <div className="gantt-label-subtitle">{entry.subtitle}</div>}
         <div className="gantt-label-dates">
           {entry.dates}
           {entry.current && <span className="gantt-current-pill">Current</span>}
@@ -141,9 +127,15 @@ function Row({ entry, track }) {
       </div>
       <div className="gantt-chart">
         <Ticks />
-        <div className={`gantt-bar bar-${track} ${entry.current ? "bar-current" : ""}`} style={barStyle(entry)}>
-          {entry.current && <span className="gantt-bar-arrow">→</span>}
-        </div>
+        {entry.segments.map((seg, i) => (
+          <div
+            key={i}
+            className={`gantt-bar bar-${track} ${seg.current ? "bar-current" : ""}`}
+            style={barStyle(seg)}
+          >
+            {seg.current && <span className="gantt-bar-arrow">→</span>}
+          </div>
+        ))}
       </div>
     </div>
   );
