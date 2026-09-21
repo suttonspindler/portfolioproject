@@ -13,7 +13,7 @@ function Home() {
         <Container className="home-content">
           <Row className="hero-row">
             <Col md={7} className="hero-stack">
-              <p className="hero-eyebrow">Software Engineer · Northeastern University · 2026 Graduate</p>
+              <p className="hero-eyebrow">Software Engineer · Northeastern University · 2025 Graduate</p>
               <h1 className="hero-name">Sutton Spindler</h1>
               <p className="hero-tagline">
                 I build <span className="blue">API platforms</span>, <span className="blue">edge AI</span>, and{" "}
